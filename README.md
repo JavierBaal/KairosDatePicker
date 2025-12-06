@@ -60,7 +60,8 @@ export default function Page() {
 - [x] Core Grid Logic Implementation (`useCalendarMatrix`)
 - [x] Visual Component Construction
 - [x] Sidebar & Presets Integration
-- [ ] Accessibility & Keyboard Navigation
+- [x] Accessibility (ARIA Roles & Labels)
+- [ ] Keyboard Navigation
 - [ ] Npm Package Publication
 
 ## 📄 License
