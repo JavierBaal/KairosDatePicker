@@ -39,7 +39,7 @@ npm install kairos-date-picker
 ```tsx
 import { DatePicker } from '@/components/kairos-date-picker';
 import { useState } from 'react';
-import { DateRange } from 'react-day-picker';
+import { DateRange } from '@/types/date-picker';
 
 export default function Page() {
   const [date, setDate] = useState<DateRange | undefined>();
@@ -57,9 +57,9 @@ export default function Page() {
 
 ## 🗺 Roadmap
 
-- [ ] Core Grid Logic Implementation (`useCalendarMatrix`)
-- [ ] Visual Component Construction
-- [ ] Sidebar & Presets Integration
+- [x] Core Grid Logic Implementation (`useCalendarMatrix`)
+- [x] Visual Component Construction
+- [x] Sidebar & Presets Integration
 - [ ] Accessibility & Keyboard Navigation
 - [ ] Npm Package Publication
 
