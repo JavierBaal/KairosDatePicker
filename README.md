@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Kairos DatePicker
 
-## Getting Started
+**A standalone, high-performance, aesthetically premium Date Range Picker component for React/Next.js applications.**
 
-First, run the development server:
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![React](https://img.shields.io/badge/react-19-blue)
+![TypeScript](https://img.shields.io/badge/typescript-5.5-blue)
+
+## 🚀 Overview
+
+Existing libraries often struggle with precise styling customization and alignment issues. **Kairos DatePicker** is built from scratch to provide 100% control over the DOM structure, ensuring pixel-perfect alignment and smooth interactions.
+
+## ✨ Features
+
+- **Dual Month View:** Perfect for range selection context.
+- **Smart Presets:** Quick selection for "Last 7 Days", "Last Month", etc.
+- **Pixel-Perfect Alignment:** Uses CSS Grid to ensure weekday headers align perfectly with day columns.
+- **Premium UX:** Smooth hover effects, rounded highlights, and intuitive range visualization.
+- **Headless Logic:** Separated hooks (`useCalendarMatrix`) for maximum flexibility.
+- **Compatible:** Built for Next.js 15+ Server Components architecture (works as a Client Component).
+
+## 🛠 Tech Stack
+
+- **Framework:** React 19 / Next.js
+- **Styling:** Tailwind CSS v3
+- **Icons:** Lucide React
+- **Logic:** date-fns
+
+## 📦 Installation
+
+*(Coming Soon)*
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install kairos-date-picker
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📖 Usage
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```tsx
+import { DatePicker } from '@/components/kairos-date-picker';
+import { useState } from 'react';
+import { DateRange } from 'react-day-picker';
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+export default function Page() {
+  const [date, setDate] = useState<DateRange | undefined>();
 
-## Learn More
+  return (
+    <div className="p-10">
+      <DatePicker 
+        value={date} 
+        onChange={setDate} 
+      />
+    </div>
+  );
+}
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 🗺 Roadmap
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [ ] Core Grid Logic Implementation (`useCalendarMatrix`)
+- [ ] Visual Component Construction
+- [ ] Sidebar & Presets Integration
+- [ ] Accessibility & Keyboard Navigation
+- [ ] Npm Package Publication
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📄 License
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
