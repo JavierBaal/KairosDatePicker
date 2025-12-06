@@ -78,7 +78,12 @@ export function CalendarGrid({
                 ))}
             </div>
 
-            <div className="grid grid-cols-7 gap-y-1 relative" onMouseLeave={() => onDateHover(undefined)}>
+            <div
+                className="grid grid-cols-7 gap-y-1 relative"
+                onMouseLeave={() => onDateHover(undefined)}
+                role="grid"
+                aria-label={`Calendar for ${format(month, 'MMMM yyyy')}`}
+            >
                 {matrix.map((day, i) => {
                     const selected = isSelected(day.date);
                     const inRange = isInRange(day.date);
@@ -90,8 +95,13 @@ export function CalendarGrid({
                             key={i}
                             onClick={() => onDateClick(day.date)}
                             onMouseEnter={() => onDateHover(day.date)}
+                            // Accessibility Attributes
+                            role="gridcell"
+                            aria-selected={selected}
+                            tabIndex={day.isCurrentMonth && day.isToday ? 0 : -1} // Roving tabindex logic to be fully implemented
+                            aria-label={format(day.date, 'EEEE, MMMM do, yyyy')}
                             className={cn(
-                                "relative aspect-square flex items-center justify-center text-sm transition-colors focus:outline-none focus:ring-2 ring-primary/20 rounded-md",
+                                "relative aspect-square flex items-center justify-center text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:z-20 rounded-md",
 
                                 // Base colors
                                 !day.isCurrentMonth && "text-muted-foreground opacity-50",
