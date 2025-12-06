@@ -6,9 +6,7 @@
 ![React](https://img.shields.io/badge/react-19-blue)
 ![TypeScript](https://img.shields.io/badge/typescript-5.5-blue)
 
-
-https://github.com/user-attachments/assets/7029f212-fb26-4720-965d-9159f96097be
-
+https://github.com/user-attachments/assets/2c835f1e-88ad-4d41-93af-7adf9e173b13
 
 ## 🚀 Overview
 
