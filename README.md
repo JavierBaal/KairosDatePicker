@@ -6,6 +6,10 @@
 ![React](https://img.shields.io/badge/react-19-blue)
 ![TypeScript](https://img.shields.io/badge/typescript-5.5-blue)
 
+
+https://github.com/user-attachments/assets/3e3311c8-5b8f-4dd0-b284-527ded1f07e3
+
+
 ## 🚀 Overview
 
 Existing libraries often struggle with precise styling customization and alignment issues. **Kairos DatePicker** is built from scratch to provide 100% control over the DOM structure, ensuring pixel-perfect alignment and smooth interactions.
