@@ -7,7 +7,7 @@
 ![TypeScript](https://img.shields.io/badge/typescript-5.5-blue)
 
 
-https://github.com/user-attachments/assets/3e3311c8-5b8f-4dd0-b284-527ded1f07e3
+https://github.com/user-attachments/assets/7029f212-fb26-4720-965d-9159f96097be
 
 
 ## 🚀 Overview
